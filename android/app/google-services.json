@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416447534195",
+    "project_id": "pagelogin-97a4f",
+    "storage_bucket": "pagelogin-97a4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416447534195:android:005106bc3adaee1be78606",
+        "android_client_info": {
+          "package_name": "com.example.pagelogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6UaWxY8OdSNBoRloD5esK6ftRp24Ua1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
