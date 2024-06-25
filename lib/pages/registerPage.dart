@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pagelogin/components/my_button.dart';
 import 'package:pagelogin/components/textfield.dart';
+import 'package:pagelogin/pages/sevices/auth_service.dart';
 import 'package:pagelogin/pages/squareTile.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -165,9 +166,12 @@ class _RegisterPageState extends State<RegisterPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    square_tile(imgPath: "lib/images/google.png"),
+                      square_tile(imgPath: "lib/images/google.png",
+                      onTap: () => AuthService().signInWithGoogle(),
+                      ),
                     SizedBox(width: 48),
-                    square_tile(imgPath: "lib/images/Apple.png"),
+                    square_tile(imgPath: "lib/images/Apple.png",
+                    onTap: (){},),
                   ],
                 ),
                 // Not a member sign up

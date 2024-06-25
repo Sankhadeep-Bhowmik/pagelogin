@@ -1,9 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pagelogin/components/my_button.dart';
 import 'package:pagelogin/components/textfield.dart';
 import 'package:pagelogin/pages/forgotPassword.dart';
+import 'package:pagelogin/pages/sevices/auth_service.dart';
 import 'package:pagelogin/pages/squareTile.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -182,12 +184,15 @@ class _loginpageState extends State<loginpage> {
                 ),
                 SizedBox(height: 20),
                 // Google button and Apple button
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    square_tile(imgPath: "lib/images/google.png"),
+                    square_tile(imgPath: "lib/images/google.png",
+                    onTap: () => AuthService().signInWithGoogle(),
+                    ),
                     SizedBox(width: 48),
-                    square_tile(imgPath: "lib/images/Apple.png"),
+                    square_tile(imgPath: "lib/images/Apple.png",
+                    onTap: (){},),
                   ],
                 ),
                 // Not a member sign up
